@@ -1,3 +1,13 @@
+(SE O USUÁRIO DIGITAR 03
+SOMAR A E B MAIS 20%
+
+SE O USUÁRIO DIGITAR 04
+SOMAR B - A MAIS 20%
+
+SE O USUÁRIO DIGITAR 05
+SOMAR A + A MENOS 5%
+)
+// COMPLETE AS LINHAS QUE FALTAM:
 
 public class case3 {
     public static void main(String[] args) {
