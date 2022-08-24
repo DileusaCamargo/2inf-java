@@ -1,0 +1,40 @@
+*Uma revendedora de carros paga aos 
+seus vendedores um salário mensal fixo de  
+R$ 1000,00 mais uma comissão de:
+1.	R$ 500,00  de 1 a 5 carros vendido.
+(cada carro)
+2.	R$ 1000,00 por mais de 5 carros vendidos. 
+(cada carro)
+
+ */
+package caseSwitch;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author suporte
+ */
+public class carros {
+     public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    double salario = 1000.00;
+    int total_carros;
+         System.out.println("Informe a quantidade de carros vendidos");
+         total_carros = entrada.nextInt();
+        
+         if (total_carros<=5){
+             total_carros = total_carros*500;
+             salario = salario+total_carros;
+             System.out.println(" Valor do salario com a comissão: "+ salario);
+         } 
+         else{
+              total_carros = total_carros*1000;
+             salario = salario+total_carros;
+             System.out.println(" Valor do salario com a comissão: "+ salario);
+             
+         }
+         
+    
+}
+}
