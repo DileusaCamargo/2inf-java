@@ -1,0 +1,32 @@
+package contabancaria;
+
+public class ContaBancaria {
+int numero;
+double senha;
+String cliente;
+double saldo, limite;
+  
+    void depositar (double quantidade){
+        this.saldo+=quantidade;
+        System.out.println(" depósito: "+ quantidade);
+        System.out.println("Saldo atual: "+this.saldo);
+        
+        this.saldo+=this.limite;
+        
+        System.out.println(" Saldo + limite"+ this.saldo);
+       
+    }
+    boolean sacar( double quantidade){
+        if (quantidade <this.saldo){
+            this.saldo=this.saldo-quantidade;
+            System.out.println(" Quantidade sacada: "+ quantidade);
+            System.out.println("Saldo atual: "+this.saldo);
+            return true;
+        }
+        else{
+            System.out.println(" Não tem saldo suficiente");
+            return false;
+        }
+    }
+      
+}
