@@ -1,0 +1,13 @@
+package contabancaria;
+
+public class Cliente1 {
+     public static void main(String[] args) {
+         ContaBancaria Jose;
+         Jose = new ContaBancaria();
+         Jose.cliente= "Jose da Silva";
+         Jose.saldo = (1000);
+         Jose.limite= (2000);
+         Jose.senha=(23456);
+         Jose.numero=(5678);
+         Jose.depositar(100);
+       
